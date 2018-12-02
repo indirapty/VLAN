@@ -1,0 +1,7 @@
+{
+  "name": "VLAN",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
