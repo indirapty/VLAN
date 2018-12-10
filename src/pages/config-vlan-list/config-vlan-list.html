@@ -1,0 +1,132 @@
+<!--
+  Generated template for the ConfigVlanListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>SHOW VLAN</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding (ionScroll)="false">
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>SHOW VLAN</ion-card-title>
+        </ion-card-header>
+        <ion-card-content text-center>
+            <div [hidden]="port">
+                <table class="tg" style="undefined;table-layout: fixed; width: 560px">
+                    <colgroup>
+                        <col style="width: 74px">
+                        <col style="width: 92px">
+                        <col style="width: 132px">
+                        <col style="width: 262px">
+                    </colgroup>
+                    <tr>
+                        <th class="tg-7kgo">VLAN</th>
+                        <th class="tg-7kgo">Name</th>
+                        <th class="tg-7kgo">Status</th>
+                        <th class="tg-7kgo">Ports</th>
+                    </tr>
+                    <tr>
+                        <td class="tg-93b8">1</td>
+                        <td class="tg-93b8">default</td>
+                        <td class="tg-93b8">Active</td>
+                        <td class="tg-93b8">Fa0/1, Fa0/2, Fa0/3, Fa0/4</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-93b8"></td>
+                        <td class="tg-93b8"></td>
+                        <td class="tg-93b8"></td>
+                        <td class="tg-93b8">Fa0/5, Fa0/6, Fa0/7, Fa0/8</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-93b8"></td>
+                        <td class="tg-93b8"></td>
+                        <td class="tg-93b8"></td>
+                        <td class="tg-93b8">Fa0/9, Fa0/10, Fa0/11, Fa0/12</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-93b8"></td>
+                        <td class="tg-93b8"></td>
+                        <td class="tg-93b8"></td>
+                        <td class="tg-93b8">Fa0/13, Fa0/14, Fa0/15, Fa0/16</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-5nj1"></td>
+                        <td class="tg-5nj1"></td>
+                        <td class="tg-5nj1"></td>
+                        <td class="tg-5nj1">Fa0/17, Fa0/18, Fa0/19, Fa0/20</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-5nj1"></td>
+                        <td class="tg-5nj1"></td>
+                        <td class="tg-5nj1"></td>
+                        <td class="tg-5nj1">Gig0/1, Gig0/2</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-5nj1">10</td>
+                        <td class="tg-5nj1">VLAN10</td>
+                        <td class="tg-5nj1">Active<br></td>
+                        <td class="tg-5nj1"></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-23dq">20</td>
+                        <td class="tg-23dq">VLAN20</td>
+                        <td class="tg-23dq">Active</td>
+                        <td class="tg-23dq"></td>
+                    </tr>
+                </table>
+            </div>
+            <div [hidden]="!port">
+                <table class="tg" style="undefined;table-layout: fixed; width: 560px">
+                    <colgroup>
+                        <col style="width: 74px">
+                        <col style="width: 92px">
+                        <col style="width: 132px">
+                        <col style="width: 262px">
+                    </colgroup>
+                    <tr>
+                        <th class="tg-7kgo">VLAN</th>
+                        <th class="tg-7kgo">Name</th>
+                        <th class="tg-7kgo">Status</th>
+                        <th class="tg-7kgo">Ports</th>
+                    </tr>
+                    <tr>
+                        <td class="tg-93b8">1</td>
+                        <td class="tg-93b8">default</td>
+                        <td class="tg-93b8">Active</td>
+                        <td class="tg-93b8">Fa0/1, Fa0/2, Fa0/3, Fa0/4, Fa0/5, Fa0/6, Fa0/7, Fa0/8<br></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-93b8"></td>
+                        <td class="tg-93b8"></td>
+                        <td class="tg-93b8"></td>
+                        <td class="tg-93b8">Fa0/9, Fa0/21, Fa0/22, Fa0/23, Fa0/24, Gig0/1, Gig0/2</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-5nj1">10</td>
+                        <td class="tg-5nj1">VLAN10</td>
+                        <td class="tg-5nj1">Active</td>
+                        <td class="tg-5nj1">Fa0/10, Fa0/11, Fa0/12, Fa0/13, Fa0/14, Fa0/15</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-5nj1">20</td>
+                        <td class="tg-5nj1">VLAN20</td>
+                        <td class="tg-5nj1">Active</td>
+                        <td class="tg-5nj1">fa0/16, fa0/17, Fa0/18, Fa0/19, Fa0/20</td>
+                    </tr>
+                </table>
+            </div>
+        </ion-card-content>
+
+    </ion-card>
+
+
+
+</ion-content>

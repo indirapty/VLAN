@@ -1,0 +1,49 @@
+<!--
+  Generated template for the ConfigPcPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>config-pc</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Configuración PC {{pc}} </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-list>
+                <ion-item>
+                    <ion-label>Type: Static</ion-label>
+                </ion-item>
+                <ion-item>
+                    <ion-label>IP Adress:</ion-label>
+                    <ion-input type="text" [(ngModel)]="ipadress" name="ipadress"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Subnet Mask: </ion-label>
+                    <ion-input type="text" [(ngModel)]="subnetmask" name="subnetmask"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Default Gateway</ion-label>
+                    <ion-input type="text" [(ngModel)]="gateway" name="gateway"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label>DNS Server</ion-label>
+                    <ion-input type="text" [(ngModel)]="dns" name="dns">fdvdf</ion-input>
+                </ion-item>
+                <div text-center>
+                    <button ion-button (click)="goBack()"><ion-icon name="arrow-round-back"></ion-icon> Atrás</button>
+                    <button ion-button (click)="goBack()" secondary>Guardar</button>
+                </div>
+            </ion-list>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

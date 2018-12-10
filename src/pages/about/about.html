@@ -1,11 +1,25 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      About
-    </ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>
+            Equipments
+        </ion-title>
+    </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content class="card-background-page">
+
+    <ion-card class="animated shake delay-2s" (click)="openPcConfig('0')" text-center style="background-color: yellow;">
+        <img style="height: 50%; width: 50%" src="../../assets/imgs/windows-pc.png" />
+        <div class="card-title">PC0</div>
+    </ion-card>
+
+    <ion-card class="animated shake delay-3s" (click)="openPcConfig('1')" style="background-color: greenyellow;">
+        <img style="height: 50%; width: 50%" src="../../assets/imgs/windows-pc.png" />
+        <div class="card-title">PC1</div>
+    </ion-card>
+    <ion-card class="animated shake delay-4s" (click)="openPcSwitch()">
+        <img style="height: 50%; width: 50%" src="../../assets/imgs/switch.png" />
+        <div class="card-title-switch">Switch</div>
+    </ion-card>
 
 </ion-content>

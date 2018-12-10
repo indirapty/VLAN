@@ -1,17 +1,79 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Contact
-    </ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>
+            PING
+        </ion-title>
+    </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+<ion-content padding>
+    <ion-content padding (ionScroll)="false">
+        <ion-card>
+            <ion-card-header>
+                <ion-card-title>PING PC0 - PC1</ion-card-title>
+            </ion-card-header>
+            <ion-card-content text-center>
+                <ion-list>
+                    <ion-item>
+
+                        <table [hidden]="!ping" class="tg" style="undefined;table-layout: fixed; width: 354px">
+                            <colgroup>
+                                <col style="width: 110px">
+                                <col style="width: 78px">
+                                <col style="width: 110px">
+                                <col style="width: 56px">
+                            </colgroup>
+                            <tr>
+                                <th class="tg-93b8">Status</th>
+                                <th class="tg-93b8">Source</th>
+                                <th class="tg-93b8">Destination</th>
+                                <th class="tg-93b8">Type</th>
+                            </tr>
+                            <tr>
+                                <td class="tg-amw5"> Successful
+                                </td>
+                                <td class="tg-93b8">PC1</td>
+                                <td class="tg-93b8">PC0</td>
+                                <td class="tg-93b8">ICMP</td>
+                            </tr>
+                            <tr>
+                                <td class="tg-amw5">Successful</td>
+                                <td class="tg-93b8">PC0</td>
+                                <td class="tg-93b8">PC1</td>
+                                <td class="tg-93b8">ICMP</td>
+                            </tr>
+                        </table>
+                        <table [hidden]="!pingvlan" class="tg" style="undefined;table-layout: fixed; width: 354px">
+                            <colgroup>
+                                <col style="width: 110px">
+                                <col style="width: 78px">
+                                <col style="width: 110px">
+                                <col style="width: 56px">
+                            </colgroup>
+                            <tr>
+                                <th class="tg-93b8">Status</th>
+                                <th class="tg-93b8">Source</th>
+                                <th class="tg-93b8">Destination</th>
+                                <th class="tg-93b8">Type</th>
+                            </tr>
+                            <tr>
+                                <td class="tg-amw6">Failed</td>
+                                <td class="tg-93b8">PC1</td>
+                                <td class="tg-93b8">PC0</td>
+                                <td class="tg-93b8">ICMP</td>
+                            </tr>
+                            <tr>
+                                <td class="tg-amw6">Failed</td>
+                                <td class="tg-93b8">PC0</td>
+                                <td class="tg-93b8">PC1</td>
+                                <td class="tg-93b8">ICMP</td>
+                            </tr>
+                        </table>
+                    </ion-item>
+                </ion-list>
+                <button ion-button large (click)="click()">PING</button>
+                <button ion-button large (click)="clickvlan()">PING VLAN</button>
+            </ion-card-content>
+        </ion-card>
+    </ion-content>
 </ion-content>

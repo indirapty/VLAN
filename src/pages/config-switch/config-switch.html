@@ -1,0 +1,62 @@
+<!--
+  Generated template for the ConfigSwitchPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>config-switch</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding (ionScroll)="false">
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Configuración switch</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+
+            <div class="console" scrh>
+                <p>%LINK-5-CHANGED: Interface FastEthernet0/10, changed state to up
+                    <br/> %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to up
+                    <br/> %LINK-5-CHANGED: Interface FastEthernet0/16, changed state to up
+                    <br/>%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/16, changed state to up
+                    <br/>Switch>ENA
+                    <br/>Switch#CONF
+                    <br/>Configuring from terminal, memory, or network [terminal]?
+                    <br/>Enter configuration commands, one per line. End with CNTL/Z.
+                    <br/>Switch(config)# {{vlan10}}
+                    <br/> {{vlan10name}}
+                    <br/> {{exit}}
+                    <br/> {{vlan20}}
+                    <br/> {{vlan20name}}
+                    <br/> {{exit2}}
+                    <br/>{{showvlan}}
+                    <br/> {{configure}}
+                    <br/> {{configurodesc}}
+                    <br/> {{interface10}}
+                    <br/> {{modeaccess10}}
+                    <br/> {{accessvlan10}}
+                    <br/> {{exitconfig10}}
+                    <br/> {{interface20}}
+                    <br/>{{modeaccess20}}
+                    <br/> {{accessvlan20}}
+                    <br/>{{showvlan2}}
+                </p>
+                <br/>
+            </div>
+            <ion-list text-center>
+                <ion-item>
+                    <ion-input [(ngModel)]="consoleinput" type="text" name="ena" #box (keyup.enter)="onKey(box.value)"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <button ion-button secondary (click)="goBack()">Cerrar</button>
+                </ion-item>
+            </ion-list>
+        </ion-card-content>
+    </ion-card>
+</ion-content>
